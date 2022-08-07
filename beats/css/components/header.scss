@@ -1,0 +1,47 @@
+.page__header {
+    background-color:$whiteDark;
+    position: relative;
+
+    &::after {
+        content: url("/img/background/headphones.png");
+        position: absolute;
+        top: 17%;
+        left: 49%;
+    }
+
+    @include tablets {
+        height: 768px;
+
+        &::after {
+            content: url("/img/background/tablet_back.png");
+            position: absolute;
+        }
+    }
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: rem(19px);
+    margin-bottom: rem(100px);
+}
+
+.contacts {
+    color: $blackColor;
+    font-size: rem(18px);
+    position: relative;
+
+    &::before {
+        content: url("/img/icon/telephone.svg");
+        position: absolute;
+        left: rem(-16px);
+        top: rem(2px);
+    }
+}
+
+.contacts__header {
+    @include tablets {
+        display: none;
+    }
+}

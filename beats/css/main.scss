@@ -1,0 +1,37 @@
+$containerWidth: 940px;
+$baseFontSize: 16px;
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+//colors
+$redColor:#E01F3D;
+$blackColor:#292929;
+$grayColor:#666666;
+$whiteDark:#F5F5F5;
+
+@import "media.scss";
+
+//normalize
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+//setups
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import "layout.scss";
+
+//components
+@import "components/header.scss";
+@import "components/menu.scss";
+@import "components/hero.scss";
+@import "components/button.scss";
+@import "components/features.scss";
+@import "components/advantages.scss";
+@import "components/products.scss";
+@import "components/team.scss";
+@import "components/colors.scss";
+@import "components/reviews.scss";
+@import "components/video.scss";
+@import "components/order__form.scss";
+@import "components/footer.scss";
+

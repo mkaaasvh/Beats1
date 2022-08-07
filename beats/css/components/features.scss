@@ -1,0 +1,18 @@
+.features__list {
+    display: flex;
+    margin-top: rem(67px);
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.features__item {
+    display: flex;
+}
+
+.features__text {
+    color: $blackColor;
+    width: rem(114px);
+    margin-left: rem(10px);
+}

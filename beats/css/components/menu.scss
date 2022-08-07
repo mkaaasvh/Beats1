@@ -1,0 +1,18 @@
+.menu {
+    @include tablets {
+        display: none;
+    }
+}
+
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__item {
+    color: $blackColor;
+    font-size: rem(18px);
+    margin-right: 24px;
+}

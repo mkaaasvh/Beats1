@@ -1,0 +1,130 @@
+.order__form {
+    background-image: url("/img/background/cta.png");
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+.form__bigtitle {
+    font-size: rem(48px);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-top: rem(68px);
+    padding-bottom: rem(58px);
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: rem(103px);
+}
+
+.form__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form__input {
+    width: rem(222px);
+    height: rem(58px);
+    padding: rem(12px) rem(18px);
+    border-radius: rem(4px);
+    border: none;
+    margin-bottom: rem(11px);
+
+    &--longer {
+        width: rem(460px);
+    }
+
+    &--short {
+        width: rem(104px);
+    }
+
+    &--textarea {
+        width: rem(443px);
+        height: rem(150px);    
+        margin-bottom: rem(38px);
+    }
+}
+
+.form__block {
+    margin-right: rem(15px);
+}
+
+.form__title {
+    margin-bottom: rem(7px);
+}
+
+.form__controls {
+    display: flex;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    margin-right: rem(20px);
+    margin-bottom: rem(19px);
+}
+
+.radio__title {
+    margin-left: rem(10px);
+}
+
+.radio__elem {
+    display: none;
+
+    &:checked ~ .radio__visible {
+        &::before {
+            display: block;
+        }
+    }
+}
+
+.radio__visible {
+    position: relative;
+    width: rem(25px);
+    height: rem(25px);
+    background-color: #FFFFFF;
+    border-radius: 50%;
+
+    &::before {
+        content: "";
+        width: rem(13px);
+        height: rem(13px);
+        background-color: $redColor;
+        border-radius: 50%;
+        position: absolute;
+        display: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-44%,-54%);
+    }
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: rem(46px);
+}
+
+.checkbox__elem {
+    display: none;
+
+    &:checked + .checkbox__visible {
+        background: url("/img/icon/arrow.svg") #fff center center no-repeat;
+    }
+}
+
+.checkbox__visible {
+    position: relative;
+    width: rem(25px);
+    height: rem(25px);
+    background-color: #FFFFFF;
+    border-radius: rem(4px);
+}

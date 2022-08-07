@@ -1,0 +1,27 @@
+.btn {
+    color: #fff;
+    background-color: $redColor;
+    border: none;
+    border-radius: rem(100px);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: rem(18px) rem(41px);
+
+    &:hover {
+        background-color: #CA1B36;
+    }
+
+    &--theme--transparent {
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        font-weight: normal;
+        text-transform: none;
+        padding: 0;
+        margin-left: rem(15px);
+    }
+}
+
+.products__btn {
+    padding: rem(21px) rem(41px);
+}
